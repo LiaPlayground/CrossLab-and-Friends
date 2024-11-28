@@ -14,6 +14,8 @@ narrator: US English Female
 
 comment:  This presentation introduces **Edrys**, a browser-based remote lab platform designed to enable seamless collaboration in educational and experimental environments. It highlights the core technologies powering Edrys: modular components for flexible lab setups, WebRTC for secure, server-light communication, and CRDTs for consistent state synchronization across users. Attendees will learn how to create and customize virtual classrooms, explore the decentralized nature of the platform, and understand how Edrys's API enables developers to integrate and extend its functionality. By combining accessibility, scalability, and innovation, Edrys transforms the way remote labs and classrooms operate.
 
+import: https://raw.githubusercontent.com/LiaScript/CodeRunner/master/README.md
+
 -->
 
 # CrossLab and Friends: Edrys-Lite
@@ -22,6 +24,8 @@ Open the interactive presentation at:
 
 https://LiaScript.github.io/course/?https://github.com/LiaPlayground/CrossLab-and-Friends/raw/refs/heads/main/README.md
 
+GitHub: https://github.com/LiaPlayground/CrossLab-and-Friends
+
 ---
 
 <center>
@@ -29,6 +33,147 @@ https://LiaScript.github.io/course/?https://github.com/LiaPlayground/CrossLab-an
 [qr-code](https://LiaScript.github.io/course/?https://github.com/LiaPlayground/CrossLab-and-Friends/raw/refs/heads/main/README.md)
 
 </center>
+
+## Welcome in 10 Languages
+
+__ADA__
+
+```ada
+with Ada.Text_IO; use Ada.Text_IO;
+procedure Main is
+begin
+   Put_Line ("Hello CrossLab & Friends 2024!\n");
+end Main;
+```
+@LIA.ada
+
+---
+
+__APL__
+
+```apl
+⎕←'Hello CrossLab & Friends 2024!'
+```
+@LIA.apl
+
+---
+
+__Assembly__
+
+``` asm
+          global    _start
+
+          section   .text
+_start:   mov       rax, 1                  ; system call for write
+          mov       rdi, 1                  ; file handle 1 is stdout
+          mov       rsi, message            ; address of string to output
+          mov       rdx, 30                 ; number of bytes
+          syscall                           ; invoke operating system to do the write
+          mov       rax, 60                 ; system call for exit
+          xor       rdi, rdi                ; exit code 0
+          syscall                           ; invoke operating system to exit
+
+          section   .data
+message:  db        "Hello CrossLab & Friends 2024!", 10      ; note the newline at the end
+```
+@LIA.nasm
+
+---
+
+__C__
+
+```c
+#include <stdio.h>
+
+int main (void){
+  printf ("Hello CrossLab & Friends 2024!\n");
+
+	return 0;
+}
+```
+@LIA.c
+
+---
+
+__COBOL__
+
+```cobol
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. HelloWorld.
+
+       ENVIRONMENT DIVISION.
+
+       DATA DIVISION.
+
+       PROCEDURE DIVISION.
+           DISPLAY "Hello CrossLab & Friends 2024!".
+           STOP RUN.
+```
+@LIA.cobol
+
+---
+
+``` clojure
+(ns clojure.examples.hello
+   (:gen-class))
+(defn hello-world []
+   (println "Hello CrossLab & Friends 2024!"))
+(hello-world)
+```
+@LIA.clojure
+
+
+---
+
+__Python__
+
+```python
+print("Hello CrossLab & Friends 2024!")
+```
+@LIA.python
+
+
+---
+
+__Fortran__
+
+```fortran
+program hello
+  print *, "Hello CrossLab & Friends 2024!"
+end program hello
+```
+@LIA.fortran
+
+---
+
+__Go__
+
+``` go
+package main
+
+import "fmt"
+
+func main() {
+  fmt.Println("Hello CrossLab & Friends 2024!")
+}
+```
+@LIA.go
+
+---
+
+__Java__
+
+``` java
+import java.io.*;
+class Hello {
+  public static void main(String args[])
+  throws IOException
+  {
+    System.out.println("Hello CrossLab & Friends 2024!");
+  }
+}
+```
+@LIA.java(Hello)
 
 ## Technologies & Concept
 
